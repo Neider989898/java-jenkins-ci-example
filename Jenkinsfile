@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'Maven'
-        jdk 'JDK instalado'  // Corrección de comillas
+        jdk 'JDK instalado'
     }
     stages {
         stage('Clonar código') {
@@ -46,10 +46,10 @@ pipeline {
     }
     post {
         success {
-            echo '✅ La compilación y las pruebas fueron exitosas.'
+            echo ' La compilación y las pruebas fueron exitosas.'
         }
         failure {
-            echo '❌ Hubo errores en la compilación o en las pruebas.'
+            echo 'Hubo errores en la compilación o en las pruebas.'
         }
     }
 }
