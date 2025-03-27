@@ -1,9 +1,9 @@
 pipeline {
     agent any
-  //tools {
-      //  maven 'Maven'
-        // jdk 'JDK instalado'
-    //}
+  tools {
+        maven 'Maven'
+        jdk 'JDK instalado'
+    }
     stages {
         stage('Clonar código') {
             steps {
