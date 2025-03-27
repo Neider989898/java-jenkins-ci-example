@@ -11,7 +11,8 @@ pipeline {
             steps {
                 bat 'mvn clean compile'
             }
-        }stage('Pruebas') {
+        }
+        stage('Pruebas') {
             steps {
                 bat 'mvn test'
             }
@@ -22,12 +23,13 @@ pipeline {
             }
         }
     }
+
     post {
         success {
-            echo 'La compilacion y las pruebas fueron exitosas.'
+            echo 'La compilación y las pruebas fueron exitosas.'
         }
         failure {
-            echo 'Hubo errores en la compilacion o en las pruebas.'
+            echo 'Hubo errores en la compilación o en las pruebas.'
         }
     }
 }
