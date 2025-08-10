@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar código') {
             steps {
-                git url: 'https://github.com/TU_USUARIO/java-jenkins-ci-example.git', branch: 'main'
+                git url: 'https://github.com/Neider989898/java-jenkins-ci-example.git', branch: 'main'
             }
         }
         stage('Compilar') {
